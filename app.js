@@ -16,7 +16,7 @@ app.engine('hbs', handlebars({
 }))
 
 app.use(express.json())
-app.use(express.static(path.join(__dirname, 'public')))
+app.use(express.static('public'))
 
 // curl http://localhost:3000/healthcheck
 app.get('/healthcheck', (req, res) => {
@@ -24,7 +24,7 @@ app.get('/healthcheck', (req, res) => {
 })
 
 // curl http://localhost:3000
-app.get('/', async (req, res, next) => {
+app.get('/', (req, res, next) => {
     try {
         let healthcheck = { ok: 1, date: new Date(), nv: process.version, mem: process.memoryUsage() }
         healthcheck = util.inspect(healthcheck, { depth: null })
