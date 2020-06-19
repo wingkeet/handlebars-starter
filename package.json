@@ -1,0 +1,23 @@
+{
+  "name": "handlebars-starter",
+  "version": "0.0.1",
+  "description": "Handlebars starter project",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "wingkeet",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wingkeet/handlebars-starter.git"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^4.0.4"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
