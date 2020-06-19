@@ -1,7 +1,7 @@
 {
   "name": "handlebars-starter",
   "version": "0.0.1",
-  "description": "Handlebars starter project",
+  "description": "Boilerplate code to start a new Handlebars project",
   "main": "app.js",
   "scripts": {
     "start": "nodemon app.js",
