@@ -35,11 +35,15 @@ app.get('/', (req, res, next) => {
     }
 })
 
-// curl -H "content-type: application/json" -d "@data.json" http://localhost:3000
+// curl -H "content-type: application/json" -d "@data.json" -i http://localhost:3000
 app.post('/', (req, res, next) => {
     try {
-        const user = req.body.name
-        res.json({ ok: 1, name: user, date: new Date() })
+        const username = req.body.username
+        if (username === undefined) {
+            res.status(400).end()
+            return
+        }
+        res.json({ ok: 1, username, date: new Date() })
     }
     catch (err) {
         next(err)
