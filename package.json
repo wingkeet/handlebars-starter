@@ -4,7 +4,7 @@
   "description": "Boilerplate code to start a new Handlebars project",
   "main": "server.js",
   "scripts": {
-    "start": "nodemon server.js",
+    "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "wingkeet",
@@ -16,8 +16,5 @@
   "dependencies": {
     "express": "^4.17.1",
     "express-handlebars": "^5.2.0"
-  },
-  "devDependencies": {
-    "nodemon": "^2.0.6"
   }
 }
