@@ -14,7 +14,7 @@
     "url": "https://github.com/wingkeet/handlebars-starter.git"
   },
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.19.2",
     "express-handlebars": "^5.3.2"
   }
 }
